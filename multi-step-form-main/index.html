@@ -12,6 +12,9 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+   /* div,section, form{
+      border:solid 0.5px black;
+    }*/
   </style>
 </head>
 <body>
@@ -28,6 +31,7 @@
               <div class="nav_step_number">STEP 1</div>
               <div class="nav_info">YOUR INFO</div>
             </div>
+          </div>
 
             <div class="nav__element">
             <div class="nav__number">2</div>
@@ -35,21 +39,21 @@
               <div class="nav_step_number">STEP 2</div>
               <div class="nav_info">SELECT PLAN</div>
             </div>
-
+            </div>
             <div class="nav__element">
             <div class="nav__number">3</div>
             <div class="nav__instruction">
               <div class="nav_step_number">STEP 3</div>
               <div class="nav_info">ADD ONS</div>
             </div>
-
+            </div>
             <div class="nav__element">
               <div class="nav__number">4</div>
               <div class="nav__instruction">
                 <div class="nav_step_number">STEP 4</div>
                 <div class="nav_info">SUMMARY</div>
               </div>
-
+            </div>
           </div>
         </div>
       </nav>
@@ -59,26 +63,23 @@
 
         <div class="form__header">
           <h2 class="text__header">Personal info</h2>
-          <p class="text__description">please provide your name, email adress, and phone number.</p>
+          <p class="text__description">Please provide your name, email adress, and phone number.</p>
 
         </div>
-
-        <div class="form__body">
-          <form>
+          <form id="form__body">
             <div class="form__body__element">
               <label for="name">Name</label>
-              <input type="text" id="name" placeholder="Tony Minh">
+              <input type="text" id="name" required placeholder="Tony Minh">
             </div>
             <div class="form__body__element">
-              <label for="email"></label>
-              <input type="email" id="email" placeholder="tonyminh2005@gmail.com">
+              <label for="email">Email Adress</label>
+              <input type="email" id="email" required placeholder="tonyminh2005@gmail.com">
             </div>
             <div class="form__body__element">
-              <label for="phone"></label>
-              <input type="tel" id="phone" placeholder="e.g +84 903 179 701">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" required placeholder="e.g +84 903 179 701">
             </div>
           </form>
-        </div>
 
         <div class="form__footer">
           <button class="btn">Next Step</button>
