@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    display: flexbox;
+}
+body{
+    min-width:100vh;
+    height: 100vh;
+    background-color: hsl(231, 11%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.page{
+    width:70%;
+    height:80%;
+    background-color:hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.page__container{
+    width: 95%;
+    height: 95%;
+    display: flex;   
+border:solid 1px black;
+    justify-content: space-around;
+    align-content: center;
+}
+.nav{
+    flex-basis: 30%;
+    background-color:aqua;
+    border:solid 1px black;
+    background-image:url('/assets/images/bg-sidebar-desktop.svg');
+}
+.form__container{
+    flex-basis: 60%;
+    border:solid 1px black;
+}
